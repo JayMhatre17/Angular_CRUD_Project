@@ -1,0 +1,49 @@
+<div class="container mt-5 bg-light shadow mb-3">
+  <form
+    #contactForm="ngForm"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+  >
+    <input
+      type="hidden"
+      name="access_key"
+      value="b8aea753-62f4-4774-a659-c40b4530f465"
+    />
+    <legend>Contact form</legend>
+    <div class="mb-3">
+      <label for="fullname" class="form-label">Full Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="fullname"
+        placeholder="Enter your name here"
+        ngModel
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        placeholder="name@example.com"
+        ngModel
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="ask" class="form-label"
+        >What do you want to Know about?</label
+      >
+      <textarea
+        class="form-control"
+        name="ask"
+        rows="3"
+        ngModel
+        required
+      ></textarea>
+    </div>
+    <button type="button" class="btn btn-primary fw-bold mb-3">Submit</button>
+  </form>
+</div>

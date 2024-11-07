@@ -1,0 +1,40 @@
+<div class="container">
+  <legend>Edit Information</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtPrice" class="form-label">Name</label>
+      <input
+        type="text"
+        name="name"
+        [(ngModel)]="infoForm.name"
+        class="form-control"
+        id="txtName"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="txtQuantity" class="form-label"
+        >Published Books(numbers)</label
+      >
+      <input
+        type="text"
+        name="publishedBooks"
+        [(ngModel)]="infoForm.publishedBooks"
+        class="form-control"
+        id="txtpb"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="txtQuantity" class="form-label">Famous Book</label>
+      <input
+        type="text"
+        name="famousBook"
+        [(ngModel)]="infoForm.famousBook"
+        class="form-control"
+        id="txtfb"
+      />
+    </div>
+    <button type="button" (click)="update()" class="btn btn-primary">
+      Create
+    </button>
+  </form>
+</div>

@@ -1,0 +1,58 @@
+{
+  "info": [
+    {
+      "id": "3",
+      "name": "Agatha Christie",
+      "publishedBooks": "66",
+      "famousBook": "Murder on the Orient Express"
+    },
+    {
+      "id": "4",
+      "name": "Stephen King",
+      "publishedBooks": "63",
+      "famousBook": "The Shining"
+    },
+    {
+      "id": "5",
+      "name": "Haruki Murakami",
+      "publishedBooks": "14",
+      "famousBook": "Norwegian Wood"
+    },
+    {
+      "id": "6",
+      "name": "J.R.R. Tolkien",
+      "publishedBooks": "25",
+      "famousBook": "The Lord of the Rings"
+    },
+    {
+      "id": "7",
+      "name": "Isaac Asimov",
+      "publishedBooks": "500",
+      "famousBook": "Foundation"
+    },
+    {
+      "id": "8",
+      "name": "Jane Austen",
+      "publishedBooks": "6",
+      "famousBook": "Pride and Prejudice"
+    },
+    {
+      "id": "9",
+      "name": "F. Scott Fitzgerald",
+      "publishedBooks": "5",
+      "famousBook": "The Great Gatsby"
+    },
+    {
+      "id": "10",
+      "name": "Ernest Hemingway",
+      "publishedBooks": "9",
+      "famousBook": "The Old Man and the Sea"
+    },
+    {
+      "id": "11",
+      "name": "Mark Twain",
+      "publishedBooks": "28",
+      "famousBook": "Adventures of Huckleberry Finn"
+    }
+  ]
+}

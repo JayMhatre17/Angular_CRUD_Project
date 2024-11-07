@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <div class="row mt-2">
+    <div class="m-2">
+      <span>Add Info: </span>
+      <a class="btn btn-primary" [routerLink]="['/create']">Create</a>
+    </div>
+  </div>
+  <table class="table table-info table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Published Books</th>
+        <th scope="col">Famous Book</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of allInfo">
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.publishedBooks }}</td>
+        <td>{{ item.famousBook }}</td>
+        <td>
+          <a class="btn btn-primary" [routerLink]="['/edit', item.id]">Edit</a>
+        </td>
+        <td>
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-bs-toggle="modal"
+            [attr.data-bs-target]="'#staticBackdrop' + item.id"
+          >
+            Delete
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            [id]="'staticBackdrop' + item.id"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Are you sure to delete it?
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    No
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    (click)="delete(item.id)"
+                    data-bs-dismiss="modal"
+                  >
+                    Yes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- <router-outlet></router-outlet> -->
